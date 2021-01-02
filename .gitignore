@@ -1,0 +1,7 @@
+# object files
+*.obj
+*.o
+
+# Visual Studio files
+.vs/
+

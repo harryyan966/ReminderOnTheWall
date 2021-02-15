@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <Windows.h>
 #include <string>
+#include "generate.h"
 using namespace std;
 
 // get base name
@@ -10,6 +11,7 @@ void change_wallpaper(string base, const char *fname);
 
 int main(int argc, char *argv[])
 {
+	changeImage();
 	// change the wallpaper
 	change_wallpaper(getBaseName(argv[0]), "temp.png");
 	cout << "Wallpaper is changed.\nThe program will quit in 10 seconds...";

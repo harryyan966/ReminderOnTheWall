@@ -6,10 +6,12 @@ To remind classmates to do their jobs via printing names on the screen's wallpap
 
 This program is for **Windows** only.
 
-| Name      | Version   | Architecture      |
-| :---:     | :---:     | :---:             |
-| OpenCV    | 4.3.0     | x86_64 Windows    |
-| FreeXL    | 1.0.4     | x86_64 Windows    |
+| Name      | Version   |
+| :---:     | :---:     |
+| OpenCV    | 4.3.0     |
+| JsonCpp   | 1.9.4     |
+
+NOTE: Remember to config the solution by yourself
 
 ## About the idea...
 

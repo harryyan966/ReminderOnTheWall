@@ -31,6 +31,9 @@ namespace generate
             putTextZH(*mat, str, org, color, fontSize, fn, italic, underline);
         }
         inline void changeBrightness(int value) { mat->convertTo(*mat, -1, 1, value); }
+        inline void resize(int width, int height) {
+            cv::resize(*mat, *mat, cv::Size(width, height), 0, 0, INTER_LINEAR);
+        }
         inline void changeWallpaper(const string &argv, const string &img) {
             string path = getBaseName(argv.c_str());
             path += img;

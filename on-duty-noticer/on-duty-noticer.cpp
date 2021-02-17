@@ -15,10 +15,10 @@ constexpr int FONTSZ_GROUPNUM = 216;
 constexpr int POS_DATE[2] = { 510, 225 };
 constexpr int POS_GROUPNUM[2] = { 580, 400 };
 constexpr int POS_GROUPMEMBERS[4][2] = {
-	{ 640, 550 },
-	{ 640, 425 },
-	{ 640, 290 },
-	{ 640, 145 }
+	{ 675, 550 },
+	{ 675, 425 },
+	{ 675, 290 },
+	{ 675, 145 }
 };
 
 int main_process(int argc, char *argv[]);

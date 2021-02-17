@@ -69,12 +69,13 @@ void InfoIO::getUpdateTime(vector<int> &temp)
 void InfoIO::getTodayDate(vector<int> &temp)
 {
 	time_t now = time(0);
-	tm *gmtm = nullptr;
+	tm *gmtm = new tm;
 	gmtime_s(gmtm, &now);
 	temp.clear();
 	temp.push_back(gmtm->tm_year + 1900);
 	temp.push_back(gmtm->tm_mon);
 	temp.push_back(gmtm->tm_mday);
+	delete gmtm;
 }
 
 int InfoIO::getPreviousGroup(void)

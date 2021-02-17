@@ -21,9 +21,15 @@
     <ClCompile Include="generate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="InfoIO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="generate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoIO.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

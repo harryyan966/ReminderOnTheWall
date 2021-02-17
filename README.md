@@ -1,4 +1,4 @@
-# on-duty-noticer
+G# on-duty-noticer
 
 To remind classmates to do their jobs via printing names on the screen's wallpaper. 
 
@@ -25,5 +25,7 @@ NOTE: Remember to config the solution by yourself
 I'm actually ambitious, I want more fancy functions in this app.
 
 * [x] Add a preview before the wallpaper is set
+* [ ] A GUI
+* [ ] If someone is punished to be on-duty, make it easy to add them in
 * [ ] DIY content (This would need a complex GUI...)
 * [ ] Set a video as the wallpaper's background (This would be a long way)

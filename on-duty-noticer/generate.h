@@ -30,6 +30,7 @@ namespace generate
             const char* fn = "Arial", bool italic = false, bool underline = false) {
             putTextZH(*mat, str, org, color, fontSize, fn, italic, underline);
         }
+        inline void changeBrightness(int value) { mat->convertTo(*mat, -1, 1, value); }
         inline void changeWallpaper(const string &argv, const string &img) {
             string path = getBaseName(argv.c_str());
             path += img;

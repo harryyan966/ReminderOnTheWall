@@ -107,6 +107,7 @@ int main_process(int argc, char *argv[])
 					"and name it as \"wallpaper.png\" or \"wallpaper.jpg\".\n");
 		}
 		generate::ChangeWallpaper obj(file_name.c_str());
+		obj.changeBrightness(-65);
 		// put text
 		obj.putTextZH(str_date.c_str(), cv::Point(POS_DATE[0], POS_DATE[1]),				// The Date
 			DEFAULT_FONTCOLOR, FONTSZ_DATE, DEFAULT_FONT);									// 

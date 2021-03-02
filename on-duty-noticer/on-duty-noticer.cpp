@@ -90,9 +90,9 @@ int main_process(int argc, char *argv[])
 		else if (5 == group_members_num) position_group_members[1] += (38 - str_group_members.size()) / 2 * 35;
 		else if (6 == group_members_num) position_group_members[1] += (46 - str_group_members.size()) / 2 * 35;
 		// str_date
-		str_date += to_string(present_time[0]) + "年";	// Year
-		str_date += to_string(present_time[1]) + "月";	// Month
-		str_date += to_string(present_time[2]) + "日";	// Date
+		str_date += to_string(present_time[0]) + "年";		// Year
+		str_date += to_string(present_time[1] + 1) + "月";	// Month
+		str_date += to_string(present_time[2]) + "日";		// Date
 		// str_groupnum
 		str_groupnum += to_string(present_group + 1) + "组值日";
 

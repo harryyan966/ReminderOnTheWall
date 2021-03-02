@@ -62,7 +62,7 @@ void InfoIO::getUpdateTime(vector<int> &temp)
 		throw std::runtime_error("Date format error!");
 	temp.clear();
 	temp.push_back(root["UpdateTime"][0].asInt());
-	temp.push_back(root["UpdateTime"][1].asInt());
+	temp.push_back(root["UpdateTime"][1].asInt() - 1);
 	temp.push_back(root["UpdateTime"][2].asInt());
 }
 
@@ -130,7 +130,7 @@ void InfoIO::changeUpdateTime(vector<int>& time)
     std::ostringstream stream;
 
 	root["UpdateTime"][0] = time.at(0);	// year
-	root["UpdateTime"][1] = time.at(1);	// month
+	root["UpdateTime"][1] = time.at(1) + 1;	// month
 	root["UpdateTime"][2] = time.at(2);	// date
 	// copy previous group
 	root["PreviousGroup"] = this->getPreviousGroup();

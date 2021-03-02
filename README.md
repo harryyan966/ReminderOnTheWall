@@ -24,7 +24,7 @@ NOTE: Remember to config the solution by yourself
 
 I'm actually ambitious, I want more fancy functions in this app.
 
-* [x] Add a preview before the wallpaper is set
+* [ ] Add a preview before the wallpaper is set
 * [ ] A GUI
 * [ ] If someone is punished to be on-duty, make it easy to add them in
 * [ ] DIY content (This would need a complex GUI...)

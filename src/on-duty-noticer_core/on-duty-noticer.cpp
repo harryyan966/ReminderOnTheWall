@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
 
 int main_process(int argc, char *argv[])
 {
+	bool skipping = false;
 	int present_group = -1;		// this is initialized because we don't know
 								// if it's necessary to update the wallpaper
 	vector<int> present_time;
@@ -56,20 +57,22 @@ int main_process(int argc, char *argv[])
 		int total_group = data.readTotalGroups();
 		data.getUpdateTime(update_time);
 		data.getTodayDate(present_time);
+		// get present group
+		present_group = previous_group == (total_group - 1) ? 0 : previous_group + 1;
+		data.readGroupMembers(group_members, present_group);
 		if (update_time == present_time)
 		{
 			cout << "It's not the time to change the on-duty group\n";
 			cout << "\n\nThe program is going to quit in 5 seconds...\n";
-			goto END;
+			skipping = true;
+			goto SKIP;
 		}
-		// get present group
-		present_group = previous_group == (total_group - 1) ? 0 : previous_group + 1;
-		data.readGroupMembers(group_members, present_group);
 		// change runtime info
 		data.changePreviousGroup(present_group);
 		data.changeUpdateTime(present_time);
 		data.close();
 	}
+SKIP:
 	// generate output data
 	// change the wallpaper
 	{
@@ -122,6 +125,8 @@ int main_process(int argc, char *argv[])
 		obj.save(argv[0], "temp.png");
 		obj.changeWallpaper(argv[0], "temp.png");
 	}
+
+	if (skipping) goto END;
 
 	cout << "Wallpaper is changed.\n\n\nThe program will quit in 5 seconds...\n";
 END:

@@ -1,0 +1,3 @@
+[submodule "src/lib/libconfig"]
+	path = src/lib/libconfig
+	url = https://github.com/josslei/libconfig.git

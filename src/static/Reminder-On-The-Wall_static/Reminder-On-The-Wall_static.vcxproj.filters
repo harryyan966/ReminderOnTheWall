@@ -18,6 +18,9 @@
     <ClInclude Include="headers\SimpleCSV.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headers\WallpaperConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SimpleCSV.cpp">
@@ -26,5 +29,11 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\WallpaperConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

@@ -1,28 +1,44 @@
-G# on-duty-noticer
+# Reminder On The Wall
 
-To remind classmates to do their jobs via printing names on the screen's wallpaper. 
+This program generates a schedule about which group of a certain day is on duty (do the cleaning job). Each group is numbered, and the program will automatically generates a sequential schedule.
 
-## Environment 
-
-This program is for **Windows** only.
+## Dependencies
 
 | Name      | Version   |
 | :---:     | :---:     |
-| OpenCV    | 4.3.0     |
-| JsonCpp   | 1.9.4     |
+| OpenCV    | 4.2       |
+| libconfig | 1.7.3     |
 
-NOTE: Remember to config the solution by yourself
+You can install OpenCV using NuGet.
+
+You may install libconfig using NuGet or Vcpkg. However, I have put the source code in this repository as a sub-module; you can pull the source code down and compile it using whether Visual Studio (.sln file) or CMake (CMakeLists.txt).
+
+> If you directly install libconfig library, please place ***libconfig++.lib*** under directory:
+> ***src/lib/libconfig/build/x64/*** for x86_64 Windows (64 bit machine) or
+> ***src/lib/libconfig/build/Win32/*** for x86 Windows (32 bit machine)
+
+---
+
+# Compile
+
+This tutorial help you to compile this program using Visual Studio
+Your Visual Studio need to support C++17 for compiling `Reminder-On-The-Wall_static`
+
+1. Open solution `src/lib/libconfig/libconfig_vs2017.sln`
+2. Build `libconfig++`
+3. Open solution `Reminder-On-The-Wall_static.sln`
+4. Build `Reminder-On-The-Wall_static`, keep `libconfig++` and `Reminder-On-The-Wall_static` built on the same platform.
 
 ## About the idea...
 
-> The idea of implementing this program was from Cynthia, which we are in the
-> same high school. Here's her version of implementation [Cynthia7979/on_duty_noticer](https://github.com/Cynthia7979/on_duty_noticer). 
+> [Cynthia7979](https://github.com/Cynthia7979) had this idea before me
+> Her implementation [Cynthia7979/on_duty_noticer](https://github.com/Cynthia7979/on_duty_noticer). 
 > 
-> February 16, 2021
+> July 23, 2021
+
+---
 
 ## TODO
-
-I'm actually ambitious, I want more fancy functions in this app.
 
 * [ ] Add a preview before the wallpaper is set
 * [ ] A GUI

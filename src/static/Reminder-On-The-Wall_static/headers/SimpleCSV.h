@@ -17,7 +17,7 @@ class SimpleCSV
 	vector<string>* chart;
 
 public:
-	SimpleCSV(string f);
+	SimpleCSV(const string& f);
 	~SimpleCSV() {
 		if (nullptr != chart) delete[] chart;
 	}

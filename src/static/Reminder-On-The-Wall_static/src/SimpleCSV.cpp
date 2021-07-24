@@ -1,10 +1,7 @@
-#include <SimpleCSV.h>
-#include <fstream>
+#include "../headers/SimpleCSV.h"
 using namespace std;
 
-#include <iostream>
-
-SimpleCSV::SimpleCSV(string f) : file_name(f), total_Lines(0), chart(nullptr)
+SimpleCSV::SimpleCSV(const string& f) : file_name(f), total_Lines(0), chart(nullptr)
 {
 	ifstream fp(f, ios::binary);
 	// find file length

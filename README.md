@@ -31,10 +31,9 @@ Your Visual Studio need to support C++17 for compiling `Reminder-On-The-Wall_sta
 
 ## About the idea...
 
-> [Cynthia7979](https://github.com/Cynthia7979) had this idea before me
-> Her implementation [Cynthia7979/on_duty_noticer](https://github.com/Cynthia7979/on_duty_noticer). 
+> Inspired by Cynthia ([Cynthia7979@github.com](https://github.com/Cynthia7979)), link [Cynthia7979/on_duty_noticer](https://github.com/Cynthia7979/on_duty_noticer).
 > 
-> July 23, 2021
+> July 28, 2021
 
 ---
 

@@ -5,6 +5,8 @@ WallpaperConfig::WallpaperConfig(const string& f) : cfg()
 {
 	cfg.readFile(f);
 	wallpapaer_source_name = nullptr;
+	text_elements_list = nullptr;
+	number_text_elements = 0;
 }
 
 WallpaperConfig::~WallpaperConfig()
@@ -12,6 +14,10 @@ WallpaperConfig::~WallpaperConfig()
 	cfg.~Config();
 	if (nullptr != wallpapaer_source_name)
 		delete[] wallpapaer_source_name;
+	// delete[][] text_elements_list
+	for (int i = 0; i < number_text_elements; i++)
+		if (nullptr != text_elements_list[i])
+			delete[] text_elements_list[i];
 }
 
 char* WallpaperConfig::getWallpaperSource()
@@ -32,7 +38,7 @@ char* WallpaperConfig::getWallpaperSource()
 	return wallpapaer_source_name;
 }
 
-int WallpaperConfig::getBackgroundTheme()
+int WallpaperConfig::getBackgroundTheme() const
 {
 	string theme = cfg.lookup("background_theme");
 	if ("dark" == theme) return WallpaperConfigConstants::BackgroundTheme::dark;
@@ -40,14 +46,9 @@ int WallpaperConfig::getBackgroundTheme()
 	return 0;	// default dark
 }
 
-int WallpaperConfig::getFontFace()
+char** WallpaperConfig::getTextElements() const
 {
-	return cfg.lookup("font");
-}
-
-bool WallpaperConfig::isItalic()
-{
-	return cfg.lookup("italic");
+	return nullptr;
 }
 
 string WallpaperConfig::wallpaperSourceCmdParser(const string& command)

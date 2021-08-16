@@ -33,6 +33,9 @@ class WallpaperConfig
 {
 	Config cfg;
 	char* wallpapaer_source_name;
+	// text element list
+	int number_text_elements;
+	char** text_elements_list;
 
 public:
 	// need full path
@@ -41,9 +44,11 @@ public:
 
 	// accessor
 	char* getWallpaperSource();
-	int getBackgroundTheme();
-	int getFontFace();
-	bool isItalic();
+	int getBackgroundTheme() const;
+	int getFontFace() const { return cfg.lookup("font"); }
+	bool isItalic() const { return cfg.lookup("italic"); }
+	// text elements
+	char** getTextElements() const;
 
 private:
 	// Need C++17

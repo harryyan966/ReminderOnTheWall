@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{21ecc1bc-d279-4713-aac0-10252562aa7f}</ProjectGuid>
-    <RootNamespace>ReminderOnTheWallstatic</RootNamespace>
+    <RootNamespace>generate-wallpaper</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

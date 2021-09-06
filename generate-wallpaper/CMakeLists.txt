@@ -21,6 +21,9 @@ add_executable (generate-wallpaper ${PROJECT_SOURCE_DIR}/source/generate-wallpap
 include_directories (${PROJECT_SOURCE_DIR}/include
                      ${OpenCV_INCLUDE_DIRS})
 
+# libconfig
+add_subdirectory("${PROJECT_SOURCE_DIR}/../lib/libconfig")
+
 # lib OpenCV
 # directory of opencv library
 link_directories (${OpenCV_LIBRARY_DIRS})

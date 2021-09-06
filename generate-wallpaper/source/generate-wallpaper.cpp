@@ -1,28 +1,18 @@
 #include <iostream>
 #include <exception>
 #include <string>
-// #include <libconfig.h++>
+#include <libconfig.h++>
 #include <opencv2/opencv.hpp>
 using namespace std;
 
-/*
 libconfig::Config cfg;
 bool getFont()
 {
 	return cfg.lookup("italic");
 }
-*/
 
 int main(int argc, char** argv)
 {
-	cv::VideoCapture cap(0);
-	cv::Mat frame;
-	while (cv::waitKey(2) != 27)
-	{
-		cap >> frame;
-		cv::imshow("Test", frame);
-	}
-	/*
 	try
 	{	
 		cfg.readFile("C:\\Users\\jossl\\github\\ReminderOnTheWall\\src\\static\\x64\\Debug\\bin\\settings.cfg");
@@ -37,6 +27,5 @@ int main(int argc, char** argv)
 	{
 		cout << e.what() << endl;
 	}
-	*/
 	return 0;
 }

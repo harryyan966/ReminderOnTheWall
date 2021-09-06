@@ -1,3 +1,0 @@
-D:/josslei/github/ReminderOnTheWall/src/generate-wallpaper/build/CMakeFiles/generate-wallpaper.dir
-D:/josslei/github/ReminderOnTheWall/src/generate-wallpaper/build/CMakeFiles/ALL_BUILD.dir
-D:/josslei/github/ReminderOnTheWall/src/generate-wallpaper/build/CMakeFiles/ZERO_CHECK.dir

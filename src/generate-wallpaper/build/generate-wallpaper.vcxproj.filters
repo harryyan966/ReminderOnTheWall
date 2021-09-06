@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\josslei\github\ReminderOnTheWall\src\generate-wallpaper\source\generate-wallpaper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\josslei\github\ReminderOnTheWall\src\generate-wallpaper\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{044007BE-C794-3A22-AC22-53D9461830F3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

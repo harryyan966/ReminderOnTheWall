@@ -1,4 +1,4 @@
-#include "../headers/WallpaperConfig.h"
+#include "../include/WallpaperConfig.h"
 using namespace std;
 
 WallpaperConfig::WallpaperConfig(const string& f) : cfg()

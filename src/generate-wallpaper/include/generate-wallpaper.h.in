@@ -1,0 +1,3 @@
+#define generate_wallpaper_VERSION_MAJOR @generate-wallpaper_VERSION_MAJOR@
+#define generate_wallpaper_VERSION_MINOR @generate-wallpaper_VERSION_MINOR@
+#define generate_wallpaper_VERSION_PATCH @generate-wallpaper_VERSION_PATCH@

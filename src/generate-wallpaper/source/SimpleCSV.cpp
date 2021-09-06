@@ -1,4 +1,4 @@
-#include "../headers/SimpleCSV.h"
+#include "../include/SimpleCSV.h"
 using namespace std;
 
 SimpleCSV::SimpleCSV(const string& f) : file_name(f), total_Lines(0), chart(nullptr)
